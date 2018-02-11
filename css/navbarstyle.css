@@ -1,0 +1,33 @@
+/* Navbar */
+
+.navbar {
+    border: 0;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navtext {
+    color: white;
+}
+
+.navtext:hover {
+    color: yellow;
+}
+
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.list {
+    background-color: white;
+}
+
+.dropdown:active,
+.navlink:active {
+    color: #fff !important;
+}
+
+.navlink:active {
+    background-color: black;
+}

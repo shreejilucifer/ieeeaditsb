@@ -1,0 +1,159 @@
+#headerimage {
+    margin-top: 100px;
+    height: 400px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #headerimage {
+        height: 200px;
+    }
+
+}
+
+.link {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+
+.fill {
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+    position: relative;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #383736;
+    border: 2px #383736 solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.fill:hover {
+    color: whitesmoke;
+}
+
+.fill:before {
+    content: "";
+    position: absolute;
+    background: rgba(56, 55, 54, 0.4);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+    top: 0;
+}
+
+.divbg {
+    display: flex; 
+    flex: 1;
+    height: 100vh;
+    color: #ffffff;
+    background-color: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutsection {
+    display: flex;
+    flex: 1;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+#welcomesection
+{
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcometitle
+{
+    padding: 60px; 
+    background: rgba( 0, 0, 255, 0.60 );
+    box-shadow: 5px 5px 5px rgba( 0,0,0,0.5);
+    border-radius: 5px;
+}
+
+
+.welcometext
+{
+    font-family: sans-serif !important;
+    font-size: 4em;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+    
+}
+
+@media only screen and (max-device-width: 480px) 
+{
+    .welcometitle
+    {
+        padding: 10px;    
+    }
+    .welcometext
+    {
+        font-size: 1.3em;
+    }
+     
+} 
