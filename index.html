@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbarstyle.css">
     <link rel="stylesheet" href="css/stars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
+
 
 </head>
 
@@ -34,7 +36,7 @@
                             <li class="navlink"><a href="/aboutus"><b class="navtext">ABOUT US</b></a></li>
                             <li class="navlink"><a href="https://www.ieee.org/index.html"><b class="navtext">IEEE</b></a></li>
                             <li class="navlink"><a href="/events"><b class="navtext">EVENTS</b></a></li>
-                            <li class="navlink"><a href="/execom"><b class="navtext">EXECOM</b></a></li>
+                            <li class="navlink"><a href="execom.html"><b class="navtext">EXECOM</b></a></li>
                             <li class="navlink dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class="navtext">SOCIETIES <span class="caret"></span></b>
                                 <ul class="dropdown-menu">
@@ -85,28 +87,68 @@
         </div>
     </div>
 
-    
     <div class="aboutsection">
         <div class="container">
-                    <h1 class="text-left"> About Us </h1>
+                    <h1 class="text-left title"> <b> About Us </b></h1> <div class="underline"></div> <br>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, cupiditate rerum, corporis, voluptatum velit, reiciendis sapiente eos esse tempora asperiores sed! Modi praesentium corporis quas cupiditate alias consequuntur dolores repellat.
         </p>
-        </div>
-        
-    </div>
-    
-    <div class="socialsection">
-        
-    </div>
-    
-    <script>
-        $("#welcomesection").backstretch(["img/slideshow/1.jpg", "img/slideshow/2.jpg"], {
-            duration: 1500,
-            fade: 2800
-        });
 
-    </script>
+        <br>
+
+          <h1 class="text-left title"> <b>Message </b></h1> <div class="underline"></div> <br>
+          <div class="row">
+            <div class="col-md-3">
+              Image
+            </div>
+            <div class="col-md-9">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eaque illum, laboriosam aliquam ducimus quisquam molestias facere non reiciendis necessitatibus, vitae rem animi. Quaerat ut sed, delectus, minus consequuntur tenetur.
+              </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="socialsection">
+  <div class="container-fluid">
+  <div class="row">
+    <a href="#">
+      <div class="col-md-3 social1">
+        <div class="text-center"><i class="fa fa-facebook-official"></i></div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="col-md-3 social2">
+        <div class="text-center"><i class="fa fa-instagram"></i></div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="col-md-3 social3">
+        <div class="text-center"><i class="fa fa-linkedin-square"></i></div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="col-md-3 social4">
+        <div class="text-center"><i class="fa fa-google-plus-official"></i></div>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+
+    <script>
+    $('#welcomesection').backstretch(
+  ['img/slideshow/1.jpg', 'img/slideshow/2.jpg'],
+  {
+    duration: 1500,
+    fade: 2800
+  }
+);
+</script>
 </body>
 
 </html>
